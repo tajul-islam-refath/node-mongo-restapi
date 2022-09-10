@@ -1,0 +1,30 @@
+{
+  "index": 0,
+  "code": 121,
+  "errInfo": {
+    "failingDocumentId": "631cabb13fb44cb204135d1b",
+    "details": {
+      "operatorName": "$jsonSchema",
+      "schemaRulesNotSatisfied": [
+        {
+          "operatorName": "properties",
+          "propertiesNotSatisfied": [
+            {
+              "propertyName": "age",
+              "description": "'age' must be a number and is required",
+              "details": [
+                {
+                  "operatorName": "bsonType",
+                  "specifiedAs": { "bsonType": "number" },
+                  "reason": "type did not match",
+                  "consideredValue": "",
+                  "consideredType": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
