@@ -5,7 +5,9 @@ const {
   createStudents,
 } = require("../controllers/student.controller");
 
+const { studentValidation } = require("../middleware/student.middleware");
+
 router.get("/get", getStudents);
-router.post("/create", createStudents);
+router.post("/create", studentValidation, createStudents);
 
 module.exports = router;

@@ -20,5 +20,8 @@ exports.createStudents = async function (req, res, next) {
     return res.status(400).json(JSON.parse(result.message));
   }
 
-  res.send(result);
+  res.status(201).json({
+    success: true,
+    result,
+  });
 };

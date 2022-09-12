@@ -6,3 +6,4 @@
 - How to use db anywhere in this project
 - How to create a MongoDB collection with schema
 - MongoDB Errors Handling
+- Req.body valiadtion with JOI
